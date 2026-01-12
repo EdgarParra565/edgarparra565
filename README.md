@@ -32,27 +32,6 @@ B.S. Computer Science & Mathematics | Sep 2024 – May 2028
 
 ---
 
-## Projects
-
-### Ed’s Painting & Construction Website
-*Python, Flask, PostgreSQL, HTML/CSS, JavaScript*  
-- Built and deployed a full-stack production website with a customer inquiry management system.  
-- Implemented a secure admin portal with authentication, CSRF protection, and rate limiting using Flask-Limiter.  
-- Designed a PostgreSQL database using SQLAlchemy ORM for storing and managing inquiries.  
-- Developed interactive cost estimation tools for painting and epoxy flooring with real-time calculations.  
-- Added automated email notifications using SMTP with asynchronous threading.  
-- Deployed with environment-based configuration and production-grade security practices.  
-
-### Java Game Development Suite
-*Java (JDK 21), Swing/AWT*  
-- Developed multiple interactive games: Tetris, Custom Card Game, Klondike Solitaire.  
-- Applied object-oriented design principles and MVC architecture across projects.  
-- Implemented AI opponents using the Strategy pattern with multiple difficulty levels.  
-- Built custom GUI components with event handling, state management, and dynamic visual feedback.  
-- Used design patterns including Observer, Strategy, and Factory for reusable, maintainable code.  
-
----
-
 ## Technical Skills
 **Programming Languages:** Java, Python, Kotlin, JavaScript, HTML, CSS  
 **Frameworks & Libraries:** Flask, SQLAlchemy, Flask-WTF, Java Swing/AWT  
