@@ -6,9 +6,6 @@ Boston, MA
 parra.ed@northeastern.edu
 edgarparra2028@gmail.com
 
-GitHub
-LinkedIn
-
 Education
 
 Northeastern University — Boston, MA
