@@ -6,10 +6,10 @@ Boston, MA
 parra.ed@northeastern.edu
 edgarparra2028@gmail.com
 
-🔗 GitHub
- | LinkedIn
+GitHub
+LinkedIn
 
-🎓 Education
+Education
 
 Northeastern University — Boston, MA
 B.S. Computer Science & Mathematics
