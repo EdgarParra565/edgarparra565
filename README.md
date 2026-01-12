@@ -1,9 +1,10 @@
-👋 Hi, I’m Edgar Parra
+I’m Edgar Parra,
 
 I’m a Computer Science & Mathematics sophomore at Northeastern University with a strong interest in software engineering, backend development, and object-oriented design. I enjoy building practical systems—from full-stack web apps to Java game engines—while applying clean architecture and security best practices.
 
-📍 Boston, MA
-📧 parra.ed@northeastern.edu
+Boston, MA
+parra.ed@northeastern.edu
+edgarparra2028@gmail.com
 
 🔗 GitHub
  | LinkedIn
@@ -31,45 +32,24 @@ NEU ALPFA
 
 NEU Math Club
 
-💼 Experience
-Painter / Technical Support
-
-Ed’s Painting & Construction — NJ
-Feb 2024 – Dec 2025
-
-Executed painting projects for 50+ residential and commercial properties, consistently meeting deadlines and quality standards.
-
-Designed, developed, and deployed a full-stack business website with a database-driven inquiry system, reducing manual client management.
-
-Maintained and serviced IT infrastructure, including hardware, software systems, and digital records.
-
-Crew Member
-
-Chipotle Mexican Grill — Montvale, NJ
-Dec 2022 – Jan 2024
-
-Delivered high-quality customer service in a fast-paced environment while maintaining strict food safety standards.
-
-Trained 5 new crew members, strengthening leadership and communication skills.
-
-🛠️ Projects
-🎨 Ed’s Painting & Construction Website
+Projects
+- Ed’s Painting & Construction Website
 
 Python, Flask, PostgreSQL, HTML/CSS, JavaScript
 
-Built and deployed a full-stack production website with a customer inquiry management system.
++ Built and deployed a full-stack production website with a customer inquiry management system.
 
-Implemented a secure admin portal with authentication, CSRF protection, and rate limiting using Flask-Limiter.
++ Implemented a secure admin portal with authentication, CSRF protection, and rate limiting using Flask-Limiter.
 
-Designed a PostgreSQL database with SQLAlchemy ORM for storing and managing inquiries.
++ Designed a PostgreSQL database with SQLAlchemy ORM for storing and managing inquiries.
 
-Developed interactive cost estimation tools for painting and epoxy flooring with real-time calculations.
++ Developed interactive cost estimation tools for painting and epoxy flooring with real-time calculations.
 
-Added automated email notifications using SMTP with asynchronous threading.
++ Added automated email notifications using SMTP with asynchronous threading.
 
-Deployed with environment-based configuration and production-grade security practices.
++ Deployed with environment-based configuration and production-grade security practices.
 
-🎮 Java Game Development Suite
+- Java Game Development Suite
 
 Java (JDK 21), Swing/AWT
 
@@ -81,31 +61,31 @@ Custom Card Game
 
 Klondike Solitaire
 
-Applied object-oriented design principles and MVC architecture across projects.
++ Applied object-oriented design principles and MVC architecture across projects.
 
-Implemented AI opponents using the Strategy pattern with multiple difficulty levels.
++ Implemented AI opponents using the Strategy pattern with multiple difficulty levels.
 
-Built custom GUI components with event handling, state management, and dynamic visual feedback.
++ Built custom GUI components with event handling, state management, and dynamic visual feedback.
 
-Used design patterns including Observer, Strategy, and Factory to promote reusable, maintainable code.
++ Used design patterns including Observer, Strategy, and Factory to promote reusable, maintainable code.
 
-💻 Technical Skills
+Technical Skills
 
-Programming Languages
+- Programming Languages
 
 Java, Python, Kotlin, JavaScript, HTML, CSS
 
-Frameworks & Libraries
+- Frameworks & Libraries
 
 Flask, SQLAlchemy, Flask-WTF, Java Swing/AWT
 
-Tools & Technologies
+- Tools & Technologies
 
 Git, GitHub, PostgreSQL, Maven, JUnit
 
 Linux/Unix, Bash, SMTP, Waitress (WSGI)
 
-Development Practices
+- Development Practices
 
 REST APIs
 
@@ -117,13 +97,13 @@ Authentication & Web Security
 
 Asynchronous Programming
 
-Languages
+- Languages
 
 English (Native)
 
 Spanish (Native)
 
-⚽ Outside of Code
+- Outside of Code
 
 Playing pickup soccer
 
@@ -133,6 +113,6 @@ Atlético de Madrid supporter
 
 New York Jets fan
 
-⭐ What I’m Looking For
+- What I’m Looking For
 
 I’m actively seeking internships and co-op opportunities in software engineering, backend development, or full-stack development where I can apply strong fundamentals and keep learning fast.
