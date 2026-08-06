@@ -8,7 +8,7 @@ Boston, MA · [parra.ed@northeastern.edu](mailto:parra.ed@northeastern.edu) · [
 
 ## About Me
 
-Sophomore at Northeastern's Khoury College of Computer Sciences studying CS and Mathematics. I build across the full stack — production web apps, probabilistic modeling systems, low-level systems software in C, and network servers in Go.
+Junior at Northeastern's Khoury College of Computer Sciences studying CS and Mathematics. I build across the full stack — production web apps, probabilistic modeling systems, low-level systems software in C, and network servers in Go.
 
 Incoming Forward Deploy Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · Fall 2026).
 
