@@ -55,9 +55,9 @@ Core Git internals rebuilt from scratch: content-addressed object store (blobs, 
 
 Unix shell in C supporting piped command chains, I/O redirection (`<`, `>`, `>>`), conditional operators (`&&`/`||`), background processes, and environment variable expansion. Built on `fork()`/`execvp()`/`waitpid()`/`pipe()` with a custom tokenizer and dynamic vector data structure.
 
-### [Java Game Development Suite](https://github.com/EdgarParra565/Tetris-Recreation) · Java, JDK 21 · Feb 2025 – Dec 2025
+### Java Game Development Suite · Java, JDK 21 · Feb 2025 – Dec 2025
 
-Tetris, Klondike Solitaire, and a custom card game built from scratch using OOP principles and MVC architecture. AI opponents with strategy patterns, custom Swing/AWT GUI components, and design patterns including observer, strategy, and factory.
+Three games built from scratch using OOP principles and MVC architecture: [Tetris](https://github.com/EdgarParra565/Tetris-Recreation), Klondike Solitaire, and a [custom card game](https://github.com/EdgarParra565/GameDemoOOD). AI opponents with strategy patterns, custom Swing/AWT GUI components, and design patterns including observer, strategy, and factory.
 
 ---
 
