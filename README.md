@@ -10,7 +10,7 @@ Boston, MA · [parra.ed@northeastern.edu](mailto:parra.ed@northeastern.edu) · [
 
 Junior at Northeastern's Khoury College of Computer Sciences studying CS and Mathematics. I build across the full stack — production web apps, probabilistic modeling systems, low-level systems software in C, and network servers in Go.
 
-Incoming Forward Deploy Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · Fall 2026).
+Software Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · Fall 2026).
 
 **Seeking Summer 2027 software engineering internships.** Available May – December 2027.
 
@@ -18,7 +18,8 @@ Incoming Forward Deploy Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · F
 
 ## Experience
 
-**Forward Deploy Engineer Co-Op** · IBM · Silicon Valley Lab, San Jose, CA · Sep 2026 – Dec 2026 *(incoming)*
+**Software Engineer Co-Op** · IBM · Silicon Valley Lab, San Jose, CA · Sep 2026 – Dec 2026
+Contributing to an extension of IBM Db2, IBM's enterprise relational database platform, as part of a product software engineering team.
 
 **Painter / Web Developer** · Ed's Painting and Construction · Feb 2024 – Dec 2025
 Built and deployed a full-stack Flask/PostgreSQL web app handling 30+ real customer inquiries monthly. Implemented authentication, CSRF protection, rate limiting, automated email notifications, and a mobile-friendly UI.
