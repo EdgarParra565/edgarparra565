@@ -19,10 +19,12 @@ Software Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · Fall 2026).
 ## Experience
 
 **Software Engineer Co-Op** · IBM · Silicon Valley Lab, San Jose, CA · Sep 2026 – Dec 2026
+
 Software engineer co-op on the Db2 for z/OS team, working on build and packaging infrastructure.
 Currently focused on metadata consolidation and service endpoint development within the build pipeline.
 
 **Painter / Web Developer** · Ed's Painting and Construction · Feb 2024 – Dec 2025
+
 Built and deployed a full-stack Flask/PostgreSQL web app handling 30+ real customer inquiries monthly. Implemented authentication, CSRF protection, rate limiting, automated email notifications, and a mobile-friendly UI.
 
 ---
