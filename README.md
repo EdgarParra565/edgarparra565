@@ -1,6 +1,6 @@
 # Edgar Parra
 
-**CS & Mathematics @ Northeastern University · Incoming IBM Co-Op · Fall 2026**
+**CS & Mathematics @ Northeastern University · SWE Co-Op @ IBM  · Fall 2026**
 
 Boston, MA · [parra.ed@northeastern.edu](mailto:parra.ed@northeastern.edu) · [LinkedIn](https://www.linkedin.com/in/edgar-parra2028) · [GitHub](https://github.com/EdgarParra565)
 
