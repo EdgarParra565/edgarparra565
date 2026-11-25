@@ -1,6 +1,6 @@
 # Edgar Parra
 
-**CS & Mathematics @ Northeastern University · SWE Co-Op @ IBM  · Fall 2026**
+**CS & Mathematics @ Northeastern University · Incoming SDE Intern @ AWS (Summer 2027) · SWE Co-Op @ IBM (Fall 2026)**
 
 Boston, MA · [parra.ed@northeastern.edu](mailto:parra.ed@northeastern.edu) · [LinkedIn](https://www.linkedin.com/in/edgar-parra2028) · [GitHub](https://github.com/EdgarParra565)
 
@@ -8,24 +8,25 @@ Boston, MA · [parra.ed@northeastern.edu](mailto:parra.ed@northeastern.edu) · [
 
 ## About Me
 
-Junior at Northeastern's Khoury College of Computer Sciences studying CS and Mathematics. I build across the full stack — production web apps, probabilistic modeling systems, low-level systems software in C, and network servers in Go.
+Junior at Northeastern's Khoury College of Computer Sciences studying CS and Mathematics. I build backend and data systems: database servers in Go, build infrastructure for mainframe software at IBM, production web apps, and data pipelines.
 
-Software Engineer Co-Op at IBM (Silicon Valley Lab, San Jose · Fall 2026).
+Incoming Software Development Engineer Intern at Amazon Web Services in New York (Summer 2027), and currently a Software Engineer Co-Op at IBM's Silicon Valley Lab.
 
-**Seeking Summer 2027 software engineering internships.** Available May – December 2027.
+**Seeking a Fall 2027 software engineering co-op.** Available August – December 2027.
 
 ---
 
 ## Experience
 
+**Incoming SDE Intern** · Amazon Web Services · New York, NY · May 2027 – Jul 2027
+
 **Software Engineer Co-Op** · IBM · Silicon Valley Lab, San Jose, CA · Sep 2026 – Dec 2026
 
-Software engineer co-op on the Db2 for z/OS team, working on build and packaging infrastructure.
-Currently focused on metadata consolidation and service endpoint development within the build pipeline.
+Software engineer on the Db2 for z/OS team, working on IBM Dependency Based Build (DBB), the build platform replacing zBuild. Consolidating build metadata from static JSON and XML files into a relational database with a UI, and built a Java renderer, triggered through a Spring Boot endpoint, that regenerates and commits product-specific files whenever the metadata changes. Also porting CopySend into DBB as a Groovy job on our Jenkins pipeline, including APAR/PTF fix-driver support and a downlevel check so older load modules never overwrite newer ones.
 
 **Painter / Web Developer** · Ed's Painting and Construction · Feb 2024 – Dec 2025
 
-Built and deployed a full-stack Flask/PostgreSQL web app handling 30+ real customer inquiries monthly. Implemented authentication, CSRF protection, rate limiting, automated email notifications, and a mobile-friendly UI.
+Built and deployed a full-stack Flask/PostgreSQL web app on Render that handles 30+ real customer inquiries a month. Implemented authentication, CSRF protection, rate limiting, instant cost estimation tools, automated email notifications, and a mobile-friendly UI.
 
 ---
 
@@ -33,45 +34,42 @@ Built and deployed a full-stack Flask/PostgreSQL web app handling 30+ real custo
 
 ### [NBA Props Forecaster & Cross-Book Arbitrage System](https://github.com/EdgarParra565/player-performance-forecaster) · Python, TypeScript · Dec 2025 – Present
 
-Full-stack probabilistic sports analytics platform. Trading-terminal-style React/TypeScript frontend (Vite, Tailwind, ECharts) backed by a read-only FastAPI service, over a SQLite database spanning 90K+ player game-log rows and 8K+ team-game rows across three seasons.
+A pricing and measurement system for NBA player props. A trading-terminal-style React/TypeScript frontend (Vite, Tailwind, ECharts) sits over a read-only FastAPI service and a SQLite database with 90K+ player game logs, 8K+ team games, and 65K settled predictions.
 
-The odds pipeline covers 20+ sportsbooks via Playwright CDP scraping and an 11-book aggregator parser, running hourly on a scheduled ETL with change-only ingestion and login-wall detection. De-vigs posted lines into implied probabilities and surfaces line-shopping, middle, and true-arbitrage signals across books.
+An hourly, change-only ETL pipeline ingests lines from 10+ sportsbooks through browser automation, de-vigs posted odds into implied probabilities, and separates line shopping, middles, and true two-way arbitrage across books.
 
-Forecasting uses Monte Carlo simulation, rolling feature engineering, and 8 distribution families (normal, Poisson, negative binomial, Student-t, lognormal, power-law) with team-total priors and correlation-aware multivariate modeling for parlay legs. Code-splitting ECharts cut the initial bundle from 1.4 MB to 370 KB.
+Forecasting uses Monte Carlo simulation, rolling features, and 8 distribution families (normal, Student-t, Poisson, binomial, negative binomial, lognormal, exponential, power law), with team-total priors and correlation-aware pricing for parlays. Forecasts are scored against historical outcomes with Brier scores, reliability tables, and closing line value. Code-splitting ECharts cut the initial bundle from 1.4 MB to 370 KB. 1,200+ tests across backend, API, and frontend.
 
-Production scaffold: Google/Microsoft OIDC sign-in, Stripe tiers with Customer Portal, HMAC-verified webhooks, per-IP rate limiting, and OWASP-compliant security headers. Validated with a paper-trading and calibration stack (Brier/reliability reports, CLV proxies, Kelly-capped slip export, z-tests against breakeven). 737 tests passing across backend, API, and frontend.
+### [Redis-Compatible Database Server](https://github.com/EdgarParra565/DataBaseRedisRecreation) · Go · May 2026 – Present
 
-### [Redis-Like Database Server](https://github.com/EdgarParra565/DataBaseRedisRecreation) · Go · May 2026 – Jun 2026
+Concurrent TCP server in Go implementing the Redis Serialization Protocol (RESP) from scratch, compatible with `redis-cli`. Supports 18 commands, with each client handled in its own goroutine and read-write locks protecting the shared data stores.
 
-Concurrent TCP server in Go implementing the Redis Serialization Protocol (RESP) from scratch, compatible with `redis-cli`. Supports 12 commands including SET, GET, DEL, INCR, EXPIRE, TTL, KEYS, HSET, and HGET across in-memory string and hash stores, with one goroutine per connection.
+Append-only file persistence with full startup replay including TTL restoration, plus lazy key expiration on access and a background cleanup goroutine. Also includes an MCP server built with the official Go SDK, exposing 13 tools so AI agents can store and query data, with a read-only mode and key-prefix allowlist for safe access. Covered by unit and concurrent stress tests.
 
-Append-only file persistence with full startup replay including TTL restoration, lazy key expiration on access, and a background cleanup goroutine scanning expirations every 100ms. Layered architecture separating RESP parsing, command dispatch, in-memory stores, expiration tracking, and AOF write/replay, with unit tests covering protocol output, handlers, persistence, expiration, and concurrent stress.
+### [NUFS: Userspace File System](https://github.com/EdgarParra565/FileSystemProject) · C, FUSE · March 2026 – April 2026
 
-### [NUFS — Userspace File System](https://github.com/EdgarParra565/FileSystemProject) · C, FUSE · March 2026 – April 2026
+Persistent Unix-like file system built from scratch in C, exposed to the Linux kernel via FUSE. Supports `ls`, `mkdir`, `cat`, `echo`, `mv`, `rm`, and nested directories on a 1 MB disk image. Inode-based architecture with dual free-space bitmaps, an mmap'd disk image for persistence, and a layered storage design separating FUSE callbacks, storage, inode and directory logic, and block allocation.
 
-Persistent Unix-like file system built from scratch in C, exposed to the Linux kernel via FUSE. Supports `ls`, `mkdir`, `cat`, `echo`, `mv`, `rm`, and nested directories on a 1 MB disk image. Inode-based architecture with dual free-space bitmaps and a layered storage abstraction (FUSE callbacks → storage → inode/directory → block allocator) with mmap'd disk image for persistence. Full read/write/create/delete/rename/truncate/utimens support with 48-byte dirent entries, permission bits, and stat(2) metadata.
+### [ugit: Git Reimplementation](https://github.com/EdgarParra565/GitRecreation) · Python · May 2026
 
-### [ugit — Git Reimplementation](https://github.com/EdgarParra565/GitRecreation) · Python · May 2026
-
-Core Git internals rebuilt from scratch: content-addressed object store (blobs, trees, commits) with SHA-1 hashing, a ref system for branches and tags, and a JSON-backed staging index. DAG-based commit history traversal, three-way merge with conflict detection, and local fetch/push with remote ref tracking. Layered architecture separating object I/O (`data.py`), repository logic (`base.py`), and CLI (`cli.py`) — mirroring Git's own plumbing/porcelain separation.
+Core Git internals rebuilt from scratch: a content-addressed object store (blobs, trees, commits) with SHA-1 hashing, refs for branches and tags, and a JSON-backed staging index. DAG-based history traversal, three-way merge with conflict detection, and local fetch/push with remote ref tracking.
 
 ### [BasicShell](https://github.com/EdgarParra565/BasicShell) · C · Feb 2026 – April 2026
 
-Unix shell in C supporting piped command chains, I/O redirection (`<`, `>`, `>>`), conditional operators (`&&`/`||`), background processes, and environment variable expansion. Built on `fork()`/`execvp()`/`waitpid()`/`pipe()` with a custom tokenizer and dynamic vector data structure.
+Unix shell in C supporting piped command chains, I/O redirection (`<`, `>`, `>>`), conditional operators (`&&`/`||`), background processes, and environment variable expansion. Built on `fork()`/`execvp()`/`waitpid()`/`pipe()` with a custom tokenizer.
 
 ### Java Game Development Suite · Java, JDK 21 · Feb 2025 – Dec 2025
 
-Three games built from scratch using OOP principles and MVC architecture: [Tetris](https://github.com/EdgarParra565/Tetris-Recreation), Klondike Solitaire, and a [custom card game](https://github.com/EdgarParra565/GameDemoOOD). AI opponents with strategy patterns, custom Swing/AWT GUI components, and design patterns including observer, strategy, and factory.
+Three games built from scratch using OOP and MVC: [Tetris](https://github.com/EdgarParra565/Tetris-Recreation), Klondike Solitaire, and a [custom card game](https://github.com/EdgarParra565/GameDemoOOD). AI opponents with strategy patterns, custom Swing/AWT components, and observer, strategy, and factory patterns.
 
 ---
 
 ## Skills
 
-**Languages:** Java · Python · C · Go · TypeScript · JavaScript · HTML/CSS · OCaml · Kotlin
-**Frameworks:** Flask · SQLAlchemy · Flask-WTF · FastAPI · React · Streamlit · Java Swing/AWT
-**Tools:** Git · PostgreSQL · SQLite · Docker · Linux/Unix · Bash · FUSE · Playwright · Vite · Maven · JUnit
-**Practices:** REST APIs · MVC · Database Design · Auth & Security · Concurrency · Statistical Modeling · Web Scraping · CI/CD
-**Math:** Probability & Statistics · Linear Algebra · Differential Equations · Group Theory · Monte Carlo Methods
+**Languages:** Java · Python · Go · C · JavaScript · SQL · HTML/CSS
+**Frameworks & Libraries:** Spring Boot · Flask · SQLAlchemy · FastAPI · React · JUnit
+**Tools:** Git · PostgreSQL · SQLite · Docker · Jenkins · Linux/Unix · Bash · Maven · Playwright · FUSE · IBM DBB · Db2 · z/OS
+**Practices:** REST APIs · Database Design · Concurrency · Auth & Security · CI/CD · Statistical Modeling · Web Scraping · Model Context Protocol (MCP)
 
 ---
 
@@ -80,7 +78,7 @@ Three games built from scratch using OOP principles and MVC architecture: [Tetri
 **Northeastern University** · B.S. Computer Science & Mathematics · Sep 2024 – May 2028 · GPA 3.6
 Khoury College of Computer Sciences · Boston, MA
 
-**Coursework:** Object Oriented Design · Computer Systems · Logic & Computation · Discrete Structures · Algorithms · Introduction to Databases · Probability & Statistics · Probability and Risk · Linear Algebra · Differential Equations · Group Theory · Calculus I–III
+**Coursework:** Algorithms · Object Oriented Design · Computer Systems · Introduction to Databases · Discrete Structures · Logic & Computation · Probability & Statistics · Probability and Risk · Linear Algebra · Differential Equations · Group Theory · Calculus I–III
 
 **Organizations:** NEU SHPE · NEU ALPFA · NEU Math Club
 
