@@ -12,8 +12,6 @@ Junior at Northeastern's Khoury College of Computer Sciences studying CS and Mat
 
 Incoming Software Development Engineer Intern at Amazon Web Services in New York (Summer 2027), and currently a Software Engineer Co-Op at IBM's Silicon Valley Lab.
 
-**Seeking a Fall 2027 software engineering co-op.** Available August – December 2027.
-
 ---
 
 ## Experience
